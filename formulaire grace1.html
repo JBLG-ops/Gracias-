@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	   .bienvenue {
+            color: aqua;
+            font-family: Impact, "Arial Black", Arial, Verdana, sans-serif;
+            text-align: center;
+        }
+        .etat {
+            color: rgb(104, 66, 34);
+            text-align: center;
+        }
+        .p {
+            color: rgb(79, 93, 172);
+        }
+        h3 {
+            color: rgb(159, 79, 88);
+            text-align: center;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        header img {
+            height: 70px;
+            width: 70px;
+            
+		center
+	   {
+		   color: rgb(128, 0, 0);
+		   
+	   }
+	   body
+	   {
+		background-color: rgb(54, 170, 155);
+	   }
+   </style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FORMULAIRE</title>
+</head>
+<body>
+  <header>
+        <img src="uac.png" alt="Logo ENEAM">
+        <h2 class="bienvenue">BIENVENUE SUR MA TROISIEME PAGE</h2>
+       <img src="eneam.jpg" alt="Logo UAC">
+    </header>
+	
+	<form method="post" action="traitement.php">
+		<marquee behavior="cool" direction="padding-left" style="font-size: 30px;">ENREGISTREMENT DES ETUDIANTS</center></marquee>
+	 
+	 <fieldset>
+      <legend>ETAT CIVIL</legend>
+	  <label>NOM:</label>
+	  <input type="text" name="NOM"/>
+<br>
+<br>
+	  <label>PRENOM:</label>
+	 
+	  <input type="text" name="PRENOM"/>
+	  <br>
+	  <br>
+
+	  <label>Date de naissance:</label>
+	 
+	  <input type="date" name="date"/>
+<br>
+<br>
+	  <label>MAIL:</label>
+	  <input type="email" name="adresse"/>
+<br>
+<br>
+	  <label>SEXE</label>
+	  <select name="sexe" id="sexe">
+		<option value="Masculin">Masculin</option>
+		<option value="Feminin">Feminin</option>
+	  </select>
+	 </fieldset>
+		
+		<fieldset>
+			<legend>LES DIPLOMES</legend>
+			<p>
+				<input type="checkbox" name="CEP" id="CEP"/><label for="CEP">CEP</label>
+				<input type="checkbox" name="BEPC" id="BEPC"/><label for="BEPC">BEPC</label>
+				<input type="checkbox" name="BAC" id="BAC"/><label for="BAC">BAC</label>
+				<input type="checkbox" name="BTS" id="BTS"/><label for="BTS">BTS</label>
+			</p>
+
+		</fieldset>
+		<p>
+			<label for="adresse"><center>VOTRE ADRESSE</center></label><br/>
+			<center><textarea name="adresse" id="adresse"></textarea></center>
+		</p>
+		<fieldset>
+			<legend>PAYS D'ORIGINE</legend>
+			<p>
+				<input type="radio" name="BENIN" value="BENIN" id="BENIN" /><label for="BENIN">BENIN</label>
+				<input type="radio" name="FRANCE" value="FRANCE" id="FRANCE" /><label for="FRANCE">FRANCE</label>
+				<input type="radio" name="NIGERIA" value="NIGERIA" id="NIGERIA" /><label for="NIGERIA">NIGERIA</label>
+				
+			</p>
+
+		</fieldset>
+		<fieldset>
+			<legend>LES BOUTONS</legend>
+			<p>
+				<input type="submit" value="ENVOYER"/>
+				<input type="reset" value="SUPRIMER"/>
+				<input type="button" value="QUITTER"/>
+	
+			</p>
+
+		</fieldset>
+	</form>
+</body>
+  </h1>
+</body>
+</html>
